@@ -1,0 +1,84 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    margin: 0;
+}
+
+/* Section layout */
+section {
+    text-align: center;
+}
+
+/* Title */
+.game--title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Scoreboard */
+.scoreboard {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Game board container */
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);  /* 3 columns */
+    grid-template-rows: repeat(3, 120px);     /* 3 rows */
+    gap: 5px;                                 /* spacing between cells */
+    justify-content: center;
+    margin: 20px auto;
+}
+
+/* Individual cells */
+.cell {
+    background-color: #fff;
+    border: 2px solid #333;       /* visible border for grid */
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.cell:hover {
+    background-color: #e0f7fa;
+    transform: scale(1.05);
+}
+
+.cell.clicked {
+    transform: scale(1.2);
+    background-color: #ffe0b2;
+}
+
+/* Status message */
+.game--status {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Restart button */
+.game--restart {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ff8a65;
+    color: #fff;
+    transition: background 0.3s;
+}
+
+.game--restart:hover {
+    background-color: #ff7043;
+}
