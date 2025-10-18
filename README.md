@@ -16,7 +16,7 @@ Player ⭕ is always **Tsion**, adding a personal touch to the game.
 - Hover and click animations  
 - Board resets for a new game 🔄  
 
-![Game Screenshot](images/screenshot.png)
+![Game Screenshot](screenshot.png)
 
 ---
 
